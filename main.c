@@ -93,14 +93,22 @@ int main(int argc, char* argv[])
             fprint_line(stdout, MAX_DASHES);
             printf("\nNODE %d:\n", i);
         }
+
+        int daedalus = 0;
+        if( 
+            is_argv_option_setted(argc, argv, "--daedalus") || 
+            is_argv_option_setted(argc, argv, "-d")
+        )
+            daedalus = 1;
         
-        RAMSES_FILE* new_ramses_file = create_updated_ramses_file(ramses_file, info_output);
+        RAMSES_FILE* new_ramses_file = create_updated_ramses_file(ramses_file, info_output, daedalus);
 
         if(new_ramses_file) {
                 print_program(new_ramses_file, PROGRAM_COLUMNS, info_output);
 
-                if( !save_ramses_file(filename_buffer, new_ramses_file) ) 
-                    printf("ERROR: Unnable to save the %s file!\n", filename_buffer);
+                if(!daedalus)
+                    if( !save_ramses_file(filename_buffer, new_ramses_file) ) 
+                        printf("ERROR: Unnable to save the %s file!\n", filename_buffer);
 
                 free(new_ramses_file);
         } else printf("ERROR: Unnable to create and set %s file!\n", filename_buffer);
@@ -148,4 +156,5 @@ void print_help(void)
     printf("\t--print, -p\t> Prints the memory from <ramses-memory-file>.mem and \n\t\t\texit program.\n");
     printf("\t-n <number>\t> Number of new <ramses-memory-file>.mem to be created, \n\t\t\teach randomly unique. 1 is the default value.\n");
     printf("\t--stdout\t> Prints information about the new <ramses-memory-file> \n\t\t\tcreated into the stdout instead of new files that would \n\t\t\tbe saved into disk.\n");
+    printf("\t--daedalus, -d\t> If setted, prints information about nodes in the Daedalus assembler format and don't generate the new .mem files\n");
 }
