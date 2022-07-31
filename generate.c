@@ -174,23 +174,39 @@ void fprint_line(FILE* fileout, int max_dashes)
 // @param fileout: output stream to print content
 // @param nodes: static array of NODE_INFO of size MAX_NODES
 // @param number_of_nodes: number of nodes (from 0 to number_of_nodes) to print to stream file
-void fprint_info(FILE* fileout, NODE_INFO nodes[MAX_NODES], int number_of_nodes)
+// @param daedalus: boolean options to print in daedalus format if setted
+void fprint_info(FILE* fileout, NODE_INFO nodes[MAX_NODES], int number_of_nodes, int daedalus)
 {
     fprintf(fileout, "Number of nodes: %02d\n", number_of_nodes);
     fprint_line(fileout, MAX_DASHES);
     
-    // printf node values and address location
-    for(int nodes_count = 0; nodes_count < number_of_nodes; ++nodes_count) {
-        fprintf(fileout, "Node at address %02X\n", nodes[nodes_count].address);
-        fprintf(fileout, "Value: %02X (%d)\tLeft Address: %02X\tRight Address: %02X\n", 
-            (unsigned char)nodes[nodes_count].node.value, 
-            nodes[nodes_count].node.value, 
-            nodes[nodes_count].node.address_left, 
-            nodes[nodes_count].node.address_right
-        );
-        fprint_line(fileout, MAX_DASHES);
+    if(daedalus) {
+        // printf node values and address location
+        for(int nodes_count = 0; nodes_count < number_of_nodes; ++nodes_count) {
+            fprintf(fileout, "ORG H%02X\n", nodes[nodes_count].address);
+            fprintf(fileout, "DAB H%02X, H%02X, H%02X\n", 
+                (unsigned char)nodes[nodes_count].node.value,  
+                nodes[nodes_count].node.address_left, 
+                nodes[nodes_count].node.address_right
+            );
+            fprint_line(fileout, MAX_DASHES);
+        }
+        fprintf(fileout, "\n");
     }
-    fprintf(fileout, "\n");
+    else {
+        // printf node values and address location
+        for(int nodes_count = 0; nodes_count < number_of_nodes; ++nodes_count) {
+            fprintf(fileout, "Node at address %02X\n", nodes[nodes_count].address);
+            fprintf(fileout, "Value: %02X (%d)\tLeft Address: %02X\tRight Address: %02X\n", 
+                (unsigned char)nodes[nodes_count].node.value, 
+                nodes[nodes_count].node.value, 
+                nodes[nodes_count].node.address_left, 
+                nodes[nodes_count].node.address_right
+            );
+            fprint_line(fileout, MAX_DASHES);
+        }
+        fprintf(fileout, "\n");
+    }
 
     // printf the suposed ramses program output
     fprintf(fileout, "OUTPUT: %02d nodes [", number_of_nodes);
@@ -208,7 +224,8 @@ void fprint_info(FILE* fileout, NODE_INFO nodes[MAX_NODES], int number_of_nodes)
 // returns a ramses file with ramdomly assigned nodes at specified addresses
 // @param ramses_file: ramses file to randomly add nodes and update
 // @param output_info: stream to output the info generated
-RAMSES_FILE* create_updated_ramses_file(RAMSES_FILE* ramses_file, FILE* output_info) 
+// @param daedalus: boolean options to print in daedalus format if setted
+RAMSES_FILE* create_updated_ramses_file(RAMSES_FILE* ramses_file, FILE* output_info, int daedalus) 
 {
     // notice that for simplicity we are statically allocating space for 15 nodes, but we might use less
     NODE_INFO nodes[MAX_NODES] = {0};
@@ -240,7 +257,7 @@ RAMSES_FILE* create_updated_ramses_file(RAMSES_FILE* ramses_file, FILE* output_i
     update_ramses_file(new_ramses_file, nodes, number_of_nodes); 
 
     // print on the output file information about this nodes and the connections
-    fprint_info(output_info, nodes, number_of_nodes); 
+    fprint_info(output_info, nodes, number_of_nodes, daedalus); 
 
     return new_ramses_file;
 } 

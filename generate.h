@@ -30,6 +30,7 @@ void fprint_line(FILE* fileout, int max_dashes);
 // returns a ramses file with ramdomly assigned nodes at specified addresses
 // @param ramses_file: ramses file to randomly add nodes and update
 // @param output_info: stream to output the info generated
-RAMSES_FILE* create_updated_ramses_file(RAMSES_FILE* ramses_file, FILE* output_info);
+// @param daedalus: boolean options to print in daedalus format if setted
+RAMSES_FILE* create_updated_ramses_file(RAMSES_FILE* ramses_file, FILE* output_info, int daedalus);
 
 #endif//__GENERATE_H__
