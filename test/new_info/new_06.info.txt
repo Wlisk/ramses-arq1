@@ -1,0 +1,51 @@
+Number of nodes: 15
+---------------------------------------------------------------------------
+Node at address 80
+Value: A1 (-95)	Left Address: 95	Right Address: D5
+---------------------------------------------------------------------------
+Node at address 95
+Value: 60 (96)	Left Address: 46	Right Address: DE
+---------------------------------------------------------------------------
+Node at address DE
+Value: 76 (118)	Left Address: 71	Right Address: E5
+---------------------------------------------------------------------------
+Node at address E5
+Value: AA (-86)	Left Address: 8F	Right Address: C6
+---------------------------------------------------------------------------
+Node at address 8F
+Value: 2F (47)	Left Address: AE	Right Address: E2
+---------------------------------------------------------------------------
+Node at address E2
+Value: 6B (107)	Left Address: 77	Right Address: D0
+---------------------------------------------------------------------------
+Node at address D0
+Value: F1 (-15)	Left Address: EC	Right Address: F0
+---------------------------------------------------------------------------
+Node at address EC
+Value: 68 (104)	Left Address: 20	Right Address: 9B
+---------------------------------------------------------------------------
+Node at address 9B
+Value: 06 (6)	Left Address: FB	Right Address: C5
+---------------------------------------------------------------------------
+Node at address C5
+Value: 29 (41)	Left Address: 38	Right Address: 8A
+---------------------------------------------------------------------------
+Node at address 8A
+Value: 72 (114)	Left Address: F6	Right Address: BB
+---------------------------------------------------------------------------
+Node at address BB
+Value: 83 (-125)	Left Address: B7	Right Address: 95
+---------------------------------------------------------------------------
+Node at address B7
+Value: 48 (72)	Left Address: 56	Right Address: AC
+---------------------------------------------------------------------------
+Node at address AC
+Value: D6 (-42)	Left Address: CD	Right Address: 45
+---------------------------------------------------------------------------
+Node at address CD
+Value: 9A (-102)	Left Address: 00	Right Address: 64
+---------------------------------------------------------------------------
+
+OUTPUT: 15 nodes [A1(-95), 60(96), 76(118), AA(-86), 2F(47), 6B(107), F1(-15), 68(104), 06(6), 29(41), 72(114), 83(-125), 48(72), D6(-42), 9A(-102)]
+
+ 

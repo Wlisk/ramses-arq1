@@ -1,0 +1,33 @@
+Number of nodes: 09
+---------------------------------------------------------------------------
+Node at address 80
+Value: EC (-20)	Left Address: B2	Right Address: E6
+---------------------------------------------------------------------------
+Node at address B2
+Value: 49 (73)	Left Address: 5A	Right Address: BD
+---------------------------------------------------------------------------
+Node at address BD
+Value: CC (-52)	Left Address: E9	Right Address: 9A
+---------------------------------------------------------------------------
+Node at address E9
+Value: 15 (21)	Left Address: B6	Right Address: E4
+---------------------------------------------------------------------------
+Node at address E4
+Value: A0 (-96)	Left Address: DC	Right Address: 15
+---------------------------------------------------------------------------
+Node at address DC
+Value: DF (-33)	Left Address: C9	Right Address: 1D
+---------------------------------------------------------------------------
+Node at address C9
+Value: F0 (-16)	Left Address: D4	Right Address: 3B
+---------------------------------------------------------------------------
+Node at address D4
+Value: D4 (-44)	Left Address: CE	Right Address: 29
+---------------------------------------------------------------------------
+Node at address CE
+Value: C4 (-60)	Left Address: 00	Right Address: F7
+---------------------------------------------------------------------------
+
+OUTPUT: 09 nodes [EC(-20), 49(73), CC(-52), 15(21), A0(-96), DF(-33), F0(-16), D4(-44), C4(-60)]
+
+ 

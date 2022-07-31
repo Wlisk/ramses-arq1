@@ -1,0 +1,45 @@
+Number of nodes: 13
+---------------------------------------------------------------------------
+Node at address 80
+Value: A0 (-96)	Left Address: 8E	Right Address: 9B
+---------------------------------------------------------------------------
+Node at address 8E
+Value: 42 (66)	Left Address: B3	Right Address: B5
+---------------------------------------------------------------------------
+Node at address B5
+Value: 22 (34)	Left Address: 66	Right Address: EA
+---------------------------------------------------------------------------
+Node at address EA
+Value: 7D (125)	Left Address: 3B	Right Address: D0
+---------------------------------------------------------------------------
+Node at address D0
+Value: DA (-38)	Left Address: B8	Right Address: F5
+---------------------------------------------------------------------------
+Node at address B8
+Value: 32 (50)	Left Address: 89	Right Address: 96
+---------------------------------------------------------------------------
+Node at address 96
+Value: CA (-54)	Left Address: A6	Right Address: B8
+---------------------------------------------------------------------------
+Node at address A6
+Value: B6 (-74)	Left Address: 87	Right Address: CF
+---------------------------------------------------------------------------
+Node at address 87
+Value: 58 (88)	Left Address: BB	Right Address: ED
+---------------------------------------------------------------------------
+Node at address ED
+Value: 57 (87)	Left Address: 83	Right Address: AE
+---------------------------------------------------------------------------
+Node at address AE
+Value: 24 (36)	Left Address: 85	Right Address: D3
+---------------------------------------------------------------------------
+Node at address D3
+Value: D9 (-39)	Left Address: 9A	Right Address: 13
+---------------------------------------------------------------------------
+Node at address 9A
+Value: 6F (111)	Left Address: DA	Right Address: 00
+---------------------------------------------------------------------------
+
+OUTPUT: 13 nodes [A0(-96), 42(66), 22(34), 7D(125), DA(-38), 32(50), CA(-54), B6(-74), 58(88), 57(87), 24(36), D9(-39), 6F(111)]
+
+

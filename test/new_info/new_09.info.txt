@@ -1,0 +1,39 @@
+Number of nodes: 11
+---------------------------------------------------------------------------
+Node at address 80
+Value: 86 (-122)	Left Address: B9	Right Address: 16
+---------------------------------------------------------------------------
+Node at address B9
+Value: E6 (-26)	Left Address: 95	Right Address: 24
+---------------------------------------------------------------------------
+Node at address 95
+Value: F0 (-16)	Left Address: CB	Right Address: AC
+---------------------------------------------------------------------------
+Node at address CB
+Value: C0 (-64)	Left Address: 8F	Right Address: CA
+---------------------------------------------------------------------------
+Node at address 8F
+Value: DC (-36)	Left Address: D2	Right Address: 7F
+---------------------------------------------------------------------------
+Node at address D2
+Value: A0 (-96)	Left Address: D7	Right Address: E4
+---------------------------------------------------------------------------
+Node at address D7
+Value: 1A (26)	Left Address: C4	Right Address: 92
+---------------------------------------------------------------------------
+Node at address 92
+Value: CC (-52)	Left Address: AF	Right Address: E8
+---------------------------------------------------------------------------
+Node at address AF
+Value: 88 (-120)	Left Address: B6	Right Address: 15
+---------------------------------------------------------------------------
+Node at address B6
+Value: 6A (106)	Left Address: 4A	Right Address: DF
+---------------------------------------------------------------------------
+Node at address DF
+Value: 52 (82)	Left Address: CE	Right Address: 00
+---------------------------------------------------------------------------
+
+OUTPUT: 11 nodes [86(-122), E6(-26), F0(-16), C0(-64), DC(-36), A0(-96), 1A(26), CC(-52), 88(-120), 6A(106), 52(82)]
+
+ 

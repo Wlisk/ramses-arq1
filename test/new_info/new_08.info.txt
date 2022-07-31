@@ -1,0 +1,48 @@
+Number of nodes: 14
+---------------------------------------------------------------------------
+Node at address 80
+Value: E1 (-31)	Left Address: B2	Right Address: 48
+---------------------------------------------------------------------------
+Node at address B2
+Value: C4 (-60)	Left Address: DB	Right Address: 6A
+---------------------------------------------------------------------------
+Node at address DB
+Value: 73 (115)	Left Address: AE	Right Address: E2
+---------------------------------------------------------------------------
+Node at address E2
+Value: 6E (110)	Left Address: 0C	Right Address: BA
+---------------------------------------------------------------------------
+Node at address BA
+Value: 78 (120)	Left Address: DD	Right Address: 91
+---------------------------------------------------------------------------
+Node at address 91
+Value: 77 (119)	Left Address: 1C	Right Address: DF
+---------------------------------------------------------------------------
+Node at address DF
+Value: F8 (-8)	Left Address: C9	Right Address: 85
+---------------------------------------------------------------------------
+Node at address C9
+Value: 2F (47)	Left Address: 54	Right Address: 85
+---------------------------------------------------------------------------
+Node at address 85
+Value: 07 (7)	Left Address: 14	Right Address: D6
+---------------------------------------------------------------------------
+Node at address D6
+Value: 23 (35)	Left Address: B4	Right Address: 8B
+---------------------------------------------------------------------------
+Node at address 8B
+Value: 46 (70)	Left Address: 5B	Right Address: 9A
+---------------------------------------------------------------------------
+Node at address 9A
+Value: 0D (13)	Left Address: 38	Right Address: 9D
+---------------------------------------------------------------------------
+Node at address 9D
+Value: F9 (-7)	Left Address: C1	Right Address: FA
+---------------------------------------------------------------------------
+Node at address C1
+Value: 8C (-116)	Left Address: 00	Right Address: 68
+---------------------------------------------------------------------------
+
+OUTPUT: 14 nodes [E1(-31), C4(-60), 73(115), 6E(110), 78(120), 77(119), F8(-8), 2F(47), 07(7), 23(35), 46(70), 0D(13), F9(-7), 8C(-116)]
+
+ 
