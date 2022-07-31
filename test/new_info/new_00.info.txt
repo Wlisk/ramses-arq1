@@ -1,0 +1,16 @@
+Number of nodes: 04
+---------------------------------------------------------------------------
+Node at address 80
+Value: D2 (-46)	Left Address: AF	Right Address: FE
+---------------------------------------------------------------------------
+Node at address AF
+Value: BD (-67)	Left Address: AA	Right Address: 32
+---------------------------------------------------------------------------
+Node at address AA
+Value: A1 (-95)	Left Address: BB	Right Address: 24
+---------------------------------------------------------------------------
+Node at address BB
+Value: EC (-20)	Left Address: 00	Right Address: D9
+---------------------------------------------------------------------------
+
+OUTPUT: 04 nodes [D2(-46), BD(-67), A1(-95), EC(-20)]
