@@ -2,7 +2,7 @@
 
 ```gcc main.c ramses.c random.c error.c generate.c -o ramses -Wall```
 
-### Compile (linux based):
+### Compile (windows):
 
 ```recommend the use of CodeBlocks IDE```
 
